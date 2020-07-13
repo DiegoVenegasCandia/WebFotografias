@@ -1,0 +1,365 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+.header {
+    background: url('../img/bg-2.jpg');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.header .menu {
+    background: #28544b;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 130px;
+    align-items: center;
+    background: rgba(0, 0, 0, .1);
+    border-bottom: 2px solid #f7f7f7;
+}
+
+.header .menu .logo {
+    flex: 1 1 auto;
+    /* height: 30px; */
+}
+
+.header .menu .logo a {
+    color: white;
+    padding-left: 50px;
+    font-size: 25px;
+
+
+}
+
+.header .menu .logo a:hover {
+    color: #343434;
+
+}
+
+.header .menu .logo a img {
+    display: flex;
+    margin: 0px -100px 20px -40px;
+    width: 150px;
+}
+
+
+.header .menu .nav {
+    flex: 5 1 auto;
+    padding: 40px;
+
+}
+
+.header .menu .nav a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 10px 0px 30px;
+    letter-spacing: 1.5px;
+}
+
+.header .menu .nav a:hover {
+    color: #343434;
+}
+
+.header .menu .social {
+    flex: 2 1 auto;
+    display: flex;
+    /* height: 30px; */
+}
+
+.header .menu .social a {
+    font-size: 18px;
+    color: white;
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+.header .menu .social a:hover {
+    color: #343434;
+}
+
+.header .texto-principal {
+
+    /* background: #ba7967; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.header .texto-principal h1 {
+
+    /* background: #ffdecf; */
+    font-family: 'Lora', serif;
+    font-size: 21px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.section {
+    background: #f7f7f7;
+    display: flex;
+    padding-top: 20px;
+}
+
+.section .articulos {
+    background: #f7f7f7;
+    flex: 2 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.section .titulo-articles h1 {
+
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.section .articulos article {
+    /* background: #f69e7b; */
+    /* flex: 1 1 40%; */
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+    flex: 1 1 45%;
+    background: #ececec;
+}
+
+.section .articulos .article img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.section .articulos .article h3 {
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 5px;
+    margin-top: -80px;
+
+}
+
+.section .articulos .article h2 {
+    display: block;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0px 0px 10px 5px;
+    color: #fff;
+
+    z-index: 2;
+
+
+}
+
+.section .articulos .article a {
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 10px;
+    background: #000;
+    margin: 10px 15px;
+}
+
+.section .articulos .article p {
+    padding: 20px 30px 15px 20px;
+    text-align: justify;
+}
+
+.section .articulos a:hover {
+    background: #546cc3;
+
+}
+
+.section .articulos .navegacion {
+    display: flex;
+    background: #000;
+    flex: 1 1 100%;
+    margin: 20px 10px 10px 0px;
+    height: 30px;
+    align-items: center;
+
+
+}
+
+.section .articulos .navegacion a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 5px;
+
+}
+
+.section .aside {
+    /* background: #eedad1; */
+    flex: 1 1 30%;
+    margin: 10px 5px 10px 0;
+}
+
+
+
+.section .aside .publi {
+    flex: 2 1 30%;
+    padding: 5px 10px;
+}
+
+.section .aside .publi img {
+    width: 100%;
+    max-height: 500px;
+
+
+}
+
+.section .aside .publi h4 {
+
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+/* .publi {
+    background: #383e56;
+} */
+
+.footer {
+    height: 20vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer .pie {
+
+    /* background: #d4b5b0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+}
+
+.footer .pie a {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+
+}
+
+@media all and (max-width : 1120px) {
+
+    .header .menu .logo a img {
+        width: 200px;
+        margin: 0px 30px 20px 0px;
+    }
+
+    .header .menu .nav {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .header .menu .social {
+        padding-bottom: 20px;
+
+    }
+
+    .header .texto-principal h1 {
+        font-size: 15px;
+    }
+
+
+    .header .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .section .aside {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media all and (max-width : 863px) {
+
+    .header .menu .nav a {
+        font-size: 12px;
+        margin: 0px -10px 0px -20px;
+    }
+}
+
+@media all and (max-width : 620px) {
+
+    .off {
+        display: none;
+    }
+
+    .header .menu .nav a {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width : 770px) {
+
+    .section .articulos {
+        flex-direction: column;
+    }
+
+    .section .articulos .article h2 {
+        font-size: 20px;
+    }
+
+    .section .aside .publi h4 {
+        font-size: 10px;
+    }
+
+}
+
+@media all and (max-width : 400px) {
+    .section .aside {
+        flex-direction: column;
+    }
+
+   
+
+}
